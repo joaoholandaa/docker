@@ -9,7 +9,7 @@ def hello_world():
 @app.route("/insert", methods=['POST'])
 def insert():
     userRepo = UserRepo()
-    body = request.json()
+    body = request.json
 
     userRepo.insert_user(body["name"])
 
